@@ -1,0 +1,66 @@
+.SpeakerCard {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  min-width: 255px;
+  min-height: 255px;
+  align-items: flex-end;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.image {
+  left: 0px;
+  width: 100%;
+  bottom: 0px;
+  filter: none;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+.read-more-container {
+  flex: 1;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  cursor: pointer;
+  display: flex;
+  opacity: 0;
+  z-index: 1;
+  transition: 0.3s;
+  align-items: flex-end;
+  padding-right: 20px;
+  flex-direction: row;
+  padding-bottom: 18px;
+  justify-content: flex-end;
+  background-color: rgba(1, 51, 109, 0.59);
+}
+.read-more-container:hover {
+  opacity: 1;
+}
+.firstName {
+  color: #3a3a0d;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.lastName {
+  color: var(--dl-color-scheme-lightblue);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
